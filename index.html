@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rinterio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-manrope bg-white text-black">
+    <section id="hero" class="pt-12 pb-24">
+      <nav class="xl:w-10/12 w-11/12 mx-auto flex justify-between items-center">
+        <div
+          class="text-[2rem] font-extrabold text-offblack flex items-center cursor-pointer"
+        >
+          <span
+            class="inline-flex font-light items-center justify-center text-black bg-btn rotate-45 w-8 h-8 rounded-full text-center m-1"
+            >&#8593;</span
+          >
+          Rinterio
+        </div>
+        <div class="nav-links hidden md:block">
+          <ul
+            class="flex justify-center items-center gap-9 text-shade font-normal text-slate-600"
+          >
+            <li><a class="font-extrabold text-black" href="">Home</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="justify-between gap-4 items-center hidden md:flex">
+          <div class="p-3 box-border hero-border rounded-full cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </div>
+          <div class="p-3 box-border hero-border rounded-full cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              />
+            </svg>
+          </div>
+          <button
+            class="flex px-5 py-3 bg-btn rounded-full text-xl gap-2 items-center font-extrabold text-offshore"
+          >
+            Book Consult
+            <span class="text-white bg-offblack p-[8px] rounded-full"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="p-3 box-border hero-border md:hidden block rounded-full cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+      </nav>
+
+      <div class="hero-container text-center mt-10 w-11/12 md:w-10/12 mx-auto">
+        <img class="mx-auto" src="assets/banner.png" alt="" />
+        <h1
+          class="md:text-[64px] text-3xl font-extrabold md:leading-[80px] text-offblack my-6"
+        >
+          A barn house of this design has a striking appearance
+        </h1>
+        <p class="w-full md:w-9/12 font-medium mx-auto text-semiblack">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents, and
+          large windows that flood the space with natural light.
+        </p>
+        <button
+          style="background-color: rgba(171, 239, 95, 0.5)"
+          class="flex px-5 py-3 justify-center rounded-full w-full md:w-fit text-xl gap-2 items-center mx-auto my-8 font-extrabold text-offblack"
+        >
+          View Details
+          <span class="text-black bg-btn p-[8px] rounded-full"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="py-[100px]"
+      style="background: rgb(244, 244, 244)"
+      id="about"
+    >
+      <div
+        class="w-11/12 md:w-10/12 mx-auto flex-col flex md:flex-row justify-between items-center"
+      >
+        <div class="about-texts basis-[45%]">
+          <p
+            class="relative flex py-2 px-4 items-center bg-white w-fit rounded-full gap-1 font-bold mb-4 text-semiblack mx-auto md:mx-0"
+          >
+            <span class="hidden md:absolute -top-[150%] -left-[50%]"
+              ><img src="assets/Vector.png" alt=""
+            /></span>
+            <span class="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </span>
+            About Us
+          </p>
+          <h1
+            class="text-3xl text-center md:text-[40px] font-extrabold leading-[50px] text-offblack"
+          >
+            We design thoughtful, liveable spaces
+          </h1>
+          <p class="py-6 text-center font-medium text-semiblack">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+          <div
+            class="p-6 bg-white rounded-2xl flex gap-6 items-center justify-start my-6"
+          >
+            <div><img src="assets/commercial.png" alt="" /></div>
+            <div>
+              <h3 class="font-extrabold text-[20px] mb-2 text-semiblack">
+                Commercial
+              </h3>
+              <p class="font-normal w-10/12 card-text">
+                The commercial space is filled with our joy and love and you
+                will admire it.
+              </p>
+            </div>
+          </div>
+          <div
+            class="p-6 bg-white rounded-2xl flex gap-6 items-center justify-start my-6"
+          >
+            <div><img src="assets/residential.png" alt="" /></div>
+            <div>
+              <h3 class="font-extrabold text-[20px] mb-2 text-semiblack">
+                Residential
+              </h3>
+              <p class="font-normal w-10/12 card-text">
+                The Residential space plan offers extensive variety of options.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="basis-[48%]">
+          <img class="w-full" src="assets/Rectangle.png" alt="" />
+        </div>
+      </div>
+      <div class="work-container text-center w-10/12 mx-auto mt-[106px]">
+        <p
+          class="flex text-center py-2 px-4 items-center bg-white w-fit rounded-full gap-1 font-bold mb-4 mx-auto text-semiblack"
+        >
+          <span class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </span>
+          How we work
+        </p>
+        <h1
+          class="text-3xl md:text-[40px] font-extrabold leading-[50px] text-offblack"
+        >
+          Our Work Process
+        </h1>
+        <p class="pt-6 pb-8 md:w-8/12 mx-auto font-medium text-semiblack">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+        <div
+          class="md:flex-row flex-col flex justify-between items-center gap-6"
+        >
+          <div
+            style="background: rgb(231, 193, 211)"
+            class="p-6 rounded-2xl text-left basis-[25%] min-h-[220px] max-w-[320px]"
+          >
+            <img src="assets/concept.png" alt="" />
+            <h3 class="text-xl py-[10px] font-extrabold text-offshore">
+              Concept
+            </h3>
+            <p class="font-normal text-semiblack">
+              The concept is pretty simple. we will make a stunning concept for
+              the building
+            </p>
+          </div>
+          <div
+            style="background: rgb(239, 218, 110)"
+            class="rounded-2xl p-6 text-left basis-[25%] min-h-[220px] max-w-[320px]"
+          >
+            <img src="assets/flow-chart.png" alt="" />
+            <h3 class="text-xl py-[10px] font-extrabold text-offshore">
+              Design Process
+            </h3>
+            <p class="font-normal text-semiblack">
+              The Design Process is a normalize systematic approach to get ahead
+              in a robust design.
+            </p>
+          </div>
+          <div
+            style="background: rgb(164, 218, 195)"
+            class="p-6 rounded-2xl text-left basis-[25%] min-h-[220px] max-w-[320px]"
+          >
+            <img src="assets/vision.png" alt="" />
+            <h3 class="text-xl py-[10px] font-extrabold text-offshore">
+              Supervision
+            </h3>
+            <p class="font-normal text-semiblack">
+              The concept is pretty simple. we will make a stunning concept for
+              the building
+            </p>
+          </div>
+          <div
+            class="p-6 text-left basis-[25%] rounded-2xl min-h-[220px] max-w-[320px]"
+            style="background: rgb(119, 170, 234)"
+          >
+            <img src="assets/concept.png" alt="" />
+            <h3 class="text-xl py-[10px] font-extrabold text-offshore">
+              Concept
+            </h3>
+            <p class="font-normal text-semiblack">
+              The concept is pretty simple. we will make a stunning concept for
+              the building
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-11/12 md:w-10/12 py-[100px] mx-auto text-center">
+      <p
+        style="background: rgba(171, 239, 95, 0.2)"
+        class="flex text-center py-2 px-4 items-center bg-white w-fit rounded-full gap-1 font-bold mb-4 mx-auto text-semiblack"
+      >
+        <span class="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+            />
+          </svg>
+        </span>
+        Explore our Latest works
+      </p>
+      <h1
+        class="text-3xl md:text-[40px] font-extrabold leading-[50px] text-offblack"
+      >
+        Our Latest Portfolio
+      </h1>
+      <p class="pt-6 pb-8 md:w-8/12 mx-auto font-medium text-semiblack">
+        Explore the latest portfolio about our latest mega works and dive deep
+        into our keen interest point where we build the amazing buildings.
+      </p>
+
+      <div class="pt-8 text-left grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div
+          class="p-6 hero-border rounded-2xl md:flex-row flex-col flex items-center gap-6 md:col-span-3"
+        >
+          <img class="w-full md:w-fit" src="assets/img1.png" alt="" />
+
+          <div>
+            <h3 class="text-semiblack font-extrabold text-xl">Household</h3>
+            <p class="mt-4 mb-5 card-text">
+              We are partnering with the best best investment hubs in the city
+              to give you the best financial support for your home
+            </p>
+            <button
+              class="flex text-xl gap-2 items-center cursor-pointer font-extrabold text-offblack"
+            >
+              View Details
+              <span class="text-black bg-btn p-[8px] rounded-full"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="p-6 hero-border rounded-2xl">
+          <img class="w-full md:w-fit" src="assets/img2.png" alt="" />
+        </div>
+        <div class="p-6 hero-border rounded-2xl">
+          <img class="w-full md:w-fit" src="assets/img3.png" alt="" />
+        </div>
+        <div
+          class="p-6 hero-border rounded-2xl flex items-center gap-6 flex-col md:flex-row md:col-span-2"
+        >
+          <img class="w-full md:w-fit" src="assets/img4.png" alt="" />
+
+          <div>
+            <h3 class="text-semiblack font-extrabold text-xl">
+              Duplex appartment
+            </h3>
+            <p class="mt-4 mb-5 card-text">
+              We will create your dream home that you have always wanted to get
+              in you whole life. bet you will not regret it.
+            </p>
+            <button
+              class="flex text-xl gap-2 items-center cursor-pointer font-extrabold text-offblack"
+            >
+              View Details
+              <span class="text-black bg-btn p-[8px] rounded-full"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="p-6 hero-border rounded-2xl">
+          <img class="w-full md:w-fit" src="assets/img5.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="py-[100px] w-10/12 mx-auto">
+        <p
+          style="background: rgba(171, 239, 95, 0.2)"
+          class="flex text-center py-2 px-4 items-center bg-white w-fit rounded-full gap-1 font-bold mb-4 mx-auto text-semiblack"
+        >
+          <span class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </span>
+          Our clients
+        </p>
+        <h1
+          class="text-center text-[40px] font-extrabold leading-[50px] text-offblack"
+        >
+          With the business we are committed
+        </h1>
+        <p
+          class="pt-6 text-center pb-8 w-11/12 md:w-10/12 mx-auto font-medium text-semiblack"
+        >
+          Here are few of the companies with whom we work and try our best
+          to satisfy their needs. We believe that you will be one of them
+        </p>
+
+        <div class="flex justify-between items-center flex-wrap gap-4">
+          <div class="p-5 hero-border rounded-2xl md:basis-[22%] basis-[45%]">
+            <img src="assets/aircan.png" alt="" />
+          </div>
+          <div class="p-5 hero-border rounded-2xl md:basis-[22%] basis-[45%]">
+            <img src="assets/aol.png" alt="" />
+          </div>
+          <div class="p-5 hero-border rounded-2xl md:basis-[22%] basis-[45%]">
+            <img src="assets/at&t.png" alt="" />
+          </div>
+          <div class="p-5 hero-border rounded-2xl md:basis-[22%] basis-[45%]">
+            <img src="assets/esa.png" alt="" />
+          </div>
+          <div class="p-5 hero-border rounded-2xl md:basis-[22%] basis-[45%]">
+            <img src="assets/geneeral electric.png" alt="" />
+          </div>
+          <div class="p-5 hero-border rounded-2xl md:basis-[22%] basis-[45%]">
+            <img src="assets/genitta.png" alt="" />
+          </div>
+          <div class="p-5 hero-border rounded-2xl md:basis-[22%] basis-[45%]">
+            <img src="assets/getsler.png" alt="" />
+          </div>
+          <div class="p-5 hero-border rounded-2xl md:basis-[22%] basis-[45%]">
+            <img src="assets/yonex.png" alt="" />
+          </div>
+          <div class="p-5 hero-border rounded-2xl md:basis-[22%] basis-[45%]">
+            <img src="assets/vw.png" alt="" />
+          </div>
+          <div class="p-5 hero-border rounded-2xl md:basis-[22%] basis-[45%]">
+            <img src="assets/nike.png" alt="" />
+          </div>
+          <div class="p-5 hero-border rounded-2xl md:basis-[22%] basis-[45%]">
+            <img src="assets/merc.png" alt="" />
+          </div>
+          <div class="p-5 hero-border rounded-2xl md:basis-[22%] basis-[45%]">
+            <img src="assets/BMW.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background-image: url(assets/bg.jpg)" class="bg-cover">
+      <div class="py-[100px] mx-auto w-11/12 md:w-8/12">
+        <p
+          style="background: rgba(171, 239, 95, 0.2)"
+          class="flex text-center py-2 px-4 items-center bg-white w-fit rounded-full gap-1 font-bold mb-4 mx-auto text-semiblack"
+        >
+          <span class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </span>
+          Let's connect
+        </p>
+        <h1
+          class="text-center text-[40px] font-extrabold leading-[50px] text-offblack"
+        >
+          Let's Discuss Next Project
+        </h1>
+        <p
+          class="pt-6 text-center pb-8 w-10/12 mx-auto font-medium text-semiblack"
+        >
+          Please if you have any query or any feedback for us, let us know. We
+          will try our best to give you the best service we can.
+        </p>
+
+        <form
+          action="#"
+          class="grid grid-cols-1 md:grid-cols-2 grid-rows-7 md:grid-rows-5 gap-6"
+        >
+          <input
+            type="text"
+            placeholder="Type here"
+            class="input input-bordered py-7 bg-white rounded-full text-black font-medium placeholder:form-placeholder w-full"
+          />
+          <input
+            type="text"
+            placeholder="Type here"
+            class="input input-bordered py-7 bg-white rounded-full text-black font-medium placeholder:form-placeholder w-full"
+          />
+          <input
+            type="text"
+            placeholder="Type here"
+            class="input input-bordered py-7 bg-white rounded-full text-black font-medium placeholder:form-placeholder w-full"
+          />
+          <input
+            type="text"
+            placeholder="Type here"
+            class="input input-bordered py-7 bg-white rounded-full text-black font-medium placeholder:form-placeholder w-full"
+          />
+          <textarea
+            placeholder="Bio"
+            class="textarea textarea-bordered text-base textarea-md w-full row-span-2 md:col-span-2 bg-white rounded-2xl text-black font-medium placeholder:form-placeholder"
+          ></textarea>
+          <button
+            class="flex px-5 py-3 bg-btn rounded-full text-xl gap-2 md:col-span-2 justify-center items-center font-extrabold text-offshore"
+          >
+            Send Mail
+            <span class="text-white bg-offblack p-[8px] rounded-full"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-offblack py-[100px] text-center">
+      <div
+        class="text-[2rem] footer-logo font-extrabold flex justify-center items-center cursor-pointer"
+      >
+        <span
+          class="inline-flex font-light items-center justify-center text-black bg-btn rotate-45 w-8 h-8 rounded-full text-center m-1"
+          >&#8593;</span
+        >
+        Rinterio
+      </div>
+      <p class="card-text font-medium w-10/12 md:w-1/2 mx-auto mt-4">
+        Rinterio is a modern builder and architechtural structure company that
+        builds the buildings of the future.
+      </p>
+      <ul
+        class="flex justify-center items-center gap-8 md:gap-[120px] md:flex-row flex-col footer-logo my-8 md:my-12"
+      >
+        <li><a href="">Home</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Blogs</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+      <button
+        class="flex px-5 py-3 bg-btn rounded-full text-xl gap-2 items-center font-extrabold mx-auto text-offshore"
+      >
+        Book Consult
+        <span class="text-white bg-offblack p-[8px] rounded-full"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+            />
+          </svg>
+        </span>
+      </button>
+    </footer>
+  </body>
+</html>

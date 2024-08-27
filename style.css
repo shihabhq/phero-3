@@ -1,0 +1,46 @@
+.font-manrope {
+  font-family: "Manrope", sans-serif;
+}
+.text-shade {
+  color: rgb(115, 115, 115);
+}
+.text-btn {
+  color: rgb(171, 239, 95);
+}
+.bg-btn {
+  background-color: rgb(171, 239, 95);
+}
+#hero {
+  background: linear-gradient(
+    0deg,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.bg-offblack {
+  background-color: rgb(28, 28, 28);
+}
+.text-offshore {
+  color: rgb(28, 28, 28);
+}
+.form-placeholder {
+  color: rgb(160, 160, 160);
+}
+
+.hero-border {
+  border: 1px solid rgb(233, 233, 233);
+}
+.footer-logo {
+  color: rgb(233, 233, 233);
+}
+
+.text-offblack {
+  color: rgb(33, 33, 33);
+}
+
+.text-semiblack {
+  color: rgb(73, 73, 73);
+}
+.card-text {
+  color: rgb(115, 115, 115);
+}
